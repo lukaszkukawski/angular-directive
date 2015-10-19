@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>AngularJS Directive</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+
+		<!-- bower:css -->
+		<!-- endbower -->
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+	</head>
+	<body>
+
+<div ng-app="starter" class="container">
+	<h1>My directives</h1>
+
+		<h2>Directive E</h2>
+		
+		<div class="row">
+			<div class="col-xs-6">
+				<h3>Controller 1</h3>
+				<div ng-controller="Controller">
+					<my-customer></my-customer>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<h3>Controller 2</h3>
+				<div ng-controller="Controller2">
+					<my-customer></my-customer>
+				</div>
+			</div>
+		</div>
+		<hr />
+
+		<h2>Directive A</h2>
+		<div ng-controller="Controller3">
+			<div my-customer></div>
+		</div>
+</div>
+
+		  <!-- bower:js -->
+		  <script src="lib/jquery/dist/jquery.js"></script>
+		  <script src="lib/angular/angular.js"></script>
+		  <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+		  <!-- endbower -->
+		<script src="js/app.js"></script>
+
+	</body>
+</html>
